@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.7.5" />
+<title>src.softdes API documentation</title>
+<meta name="description" content="Created on Wed Jun 28 09:00:39 2017 …" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>src.softdes</code></h1>
+</header>
+<section id="section-intro">
+<p>Created on Wed Jun 28 09:00:39 2017</p>
+<p>@author: rauli</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># -*- coding: utf-8 -*-
+&#34;&#34;&#34;
+Created on Wed Jun 28 09:00:39 2017
+
+@author: rauli
+&#34;&#34;&#34;
+
+from flask import Flask, request, jsonify, abort, make_response, session, render_template
+from flask_httpauth import HTTPBasicAuth
+from datetime import datetime
+import sqlite3
+import json
+import hashlib
+
+DBNAME = &#39;./quiz.db&#39;
+
+def lambda_handler(event, context):
+    &#34;&#34;&#34; function to test the submition of a student&#34;&#34;&#34;
+    try:
+        import json 
+        import numbers
+        
+        def not_equals(first, second):
+            if isinstance(first, numbers.Number) and isinstance(second, numbers.Number):
+                return abs(first - second) &gt; 1e-3
+            return first != second
+        
+        # TODO implement
+        ndes = int(event[&#39;ndes&#39;])
+        code = event[&#39;code&#39;]
+        args = event[&#39;args&#39;]
+        resp = event[&#39;resp&#39;]
+        diag = event[&#39;diag&#39;] 
+        exec(code, locals())
+        
+        
+        test = []
+        for index, arg in enumerate(args):
+            if not &#39;desafio{0}&#39;.format(ndes) in locals():
+                return &#34;Nome da função inválido. Usar &#39;def desafio{0}(...)&#39;&#34;.format(ndes)
+            
+            if not_equals(eval(&#39;desafio{0}(*arg)&#39;.format(ndes)), resp[index]):
+                test.append(diag[index])
+
+        return &#34; &#34;.join(test)
+    except:
+        return &#34;Função inválida.&#34;
+
+def converteData(orig):
+    &#34;&#34;&#34; format data&#34;&#34;&#34;
+    return orig[8:10]+&#39;/&#39;+orig[5:7]+&#39;/&#39;+orig[0:4]+&#39; &#39;+orig[11:13]+&#39;:&#39;+orig[14:16]+&#39;:&#39;+orig[17:]
+
+def getQuizes(user):
+    &#34;&#34;&#34;get all quizes from sql&#34;&#34;&#34;
+    conn = sqlite3.connect(DBNAME)
+    cursor = conn.cursor()
+    if user == &#39;admin&#39; or user == &#39;fabioja&#39; or user == &#39;online&#39;:
+        cursor.execute(&#34;SELECT id, numb from QUIZ&#34;.format(datetime.now().strftime(&#34;%Y-%m-%d %H:%M:%S&#34;)))
+    else:
+        cursor.execute(&#34;SELECT id, numb from QUIZ where release &lt; &#39;{0}&#39;&#34;.format(datetime.now().strftime(&#34;%Y-%m-%d %H:%M:%S&#34;)))
+    info = [reg for reg in cursor.fetchall()]
+    conn.close()
+    return info
+
+def getUserQuiz(userid, quizid):
+    &#34;&#34;&#34;get all user quizes&#34;&#34;&#34;
+    conn = sqlite3.connect(DBNAME)
+    cursor = conn.cursor()
+    cursor.execute(&#34;SELECT sent,answer,result from USERQUIZ where userid = &#39;{0}&#39; and quizid = {1} order by sent desc&#34;.format(userid, quizid))
+    info = [reg for reg in cursor.fetchall()]
+    conn.close()
+    return info
+
+def setUserQuiz(userid, quizid, sent, answer, result):
+    &#34;&#34;&#34;submmit a new user quiz&#34;&#34;&#34;
+    conn = sqlite3.connect(DBNAME)
+    cursor = conn.cursor()
+    #print(&#34;insert into USERQUIZ(userid,quizid,sent,answer,result) values (&#39;{0}&#39;,{1},&#39;{2}&#39;,&#39;{3}&#39;,&#39;{4}&#39;);&#34;.format(userid, quizid, sent, answer, result))
+    #cursor.execute(&#34;insert into USERQUIZ(userid,quizid,sent,answer,result) values (&#39;{0}&#39;,{1},&#39;{2}&#39;,&#39;{3}&#39;,&#39;{4}&#39;);&#34;.format(userid, quizid, sent, answer, result))
+    cursor.execute(&#34;insert into USERQUIZ(userid,quizid,sent,answer,result) values (?,?,?,?,?);&#34;, (userid, quizid, sent, answer, result))
+    #
+    conn.commit()
+    conn.close()
+
+def getQuiz(id, user):
+    &#34;&#34;&#34;get a quiz&#34;&#34;&#34;
+    conn = sqlite3.connect(DBNAME)
+    cursor = conn.cursor()
+    if user == &#39;admin&#39; or user == &#39;fabioja&#39; or user == &#39;online&#39;:
+        cursor.execute(&#34;SELECT id, release, expire, problem, tests, results, diagnosis, numb from QUIZ where id = {0}&#34;.format(id))
+    else:
+        cursor.execute(&#34;SELECT id, release, expire, problem, tests, results, diagnosis, numb from QUIZ where id = {0} and release &lt; &#39;{1}&#39;&#34;.format(id, datetime.now().strftime(&#34;%Y-%m-%d %H:%M:%S&#34;)))
+    info = [reg for reg in cursor.fetchall()]
+    conn.close()
+    return info
+
+def setInfo(pwd, user):
+    &#34;&#34;&#34;set user info&#34;&#34;&#34;
+    conn = sqlite3.connect(DBNAME)
+    cursor = conn.cursor()
+    cursor.execute(&#34;UPDATE USER set pass = ? where user = ?&#34;,(pwd, user))
+    conn.commit()
+    conn.close()
+
+def getInfo(user):
+    &#34;&#34;&#34;get all info from user&#34;&#34;&#34;
+    conn = sqlite3.connect(DBNAME)
+    cursor = conn.cursor()
+    cursor.execute(&#34;SELECT pass, type from USER where user = &#39;{0}&#39;&#34;.format(user))
+    print(&#34;SELECT pass, type from USER where user = &#39;{0}&#39;&#34;.format(user))
+    info = [reg[0] for reg in cursor.fetchall()]
+    conn.close()
+    if len(info) == 0:
+        return None
+    else:
+        return info[0]
+
+auth = HTTPBasicAuth()
+
+app = Flask(__name__, static_url_path=&#39;&#39;)
+app.secret_key = &#39;A0Zr98j/3yX R~XHH!jmN]LWX/,?TX&#39;
+
+@app.route(&#39;/&#39;, methods=[&#39;GET&#39;, &#39;POST&#39;])
+@auth.login_required
+def main():
+    &#34;&#34;&#34;main flask function&#34;&#34;&#34;
+    msg = &#39;&#39;
+    p = 1
+    challenges=getQuizes(auth.username())
+    sent = datetime.now().strftime(&#34;%Y-%m-%d %H:%M:%S&#34;)
+
+    if request.method == &#39;POST&#39; and &#39;ID&#39; in request.args:
+        id = request.args.get(&#39;ID&#39;)
+        quiz = getQuiz(id, auth.username())
+        if len(quiz) == 0:
+            msg = &#34;Boa tentativa, mas não vai dar certo!&#34;
+            p = 2
+            return render_template(&#39;index.html&#39;, username=auth.username(), challenges=challenges, p=p, msg=msg)
+
+        
+        quiz = quiz[0]
+        if sent &gt; quiz[2]:
+            msg = &#34;Sorry... Prazo expirado!&#34;
+        
+        f = request.files[&#39;code&#39;]
+        filename = &#39;./upload/{0}-{1}.py&#39;.format(auth.username(), sent)
+        f.save(filename)
+        with open(filename,&#39;r&#39;) as fp:
+            answer = fp.read()
+        
+        #lamb = boto3.client(&#39;lambda&#39;)
+        args = {&#34;ndes&#34;: id, &#34;code&#34;: answer, &#34;args&#34;: eval(quiz[4]), &#34;resp&#34;: eval(quiz[5]), &#34;diag&#34;: eval(quiz[6]) }
+
+        #response = lamb.invoke(FunctionName=&#34;Teste&#34;, InvocationType=&#39;RequestResponse&#39;, Payload=json.dumps(args))
+        #feedback = response[&#39;Payload&#39;].read()
+        #feedback = json.loads(feedback).replace(&#39;&#34;&#39;,&#39;&#39;)
+        feedback = lambda_handler(args,&#39;&#39;)
+
+
+        result = &#39;Erro&#39;
+        if len(feedback) == 0:
+            feedback = &#39;Sem erros.&#39;
+            result = &#39;OK!&#39;
+
+        setUserQuiz(auth.username(), id, sent, feedback, result)
+
+
+    if request.method == &#39;GET&#39;:
+        if &#39;ID&#39; in request.args:
+            id = request.args.get(&#39;ID&#39;)
+        else:
+            id = 1
+
+    if len(challenges) == 0:
+        msg = &#34;Ainda não há desafios! Volte mais tarde.&#34;
+        p = 2
+        return render_template(&#39;index.html&#39;, username=auth.username(), challenges=challenges, p=p, msg=msg)
+    else:
+        quiz = getQuiz(id, auth.username())
+
+        if len(quiz) == 0:
+            msg = &#34;Oops... Desafio invalido!&#34;
+            p = 2
+            return render_template(&#39;index.html&#39;, username=auth.username(), challenges=challenges, p=p, msg=msg)
+
+        answers = getUserQuiz(auth.username(), id)
+    
+    return render_template(&#39;index.html&#39;, username=auth.username(), challenges=challenges, quiz=quiz[0], e=(sent &gt; quiz[0][2]), answers=answers, p=p, msg=msg, expi = converteData(quiz[0][2]))
+
+@app.route(&#39;/pass&#39;, methods=[&#39;GET&#39;, &#39;POST&#39;])
+@auth.login_required
+def change():
+    &#34;&#34;&#34;change password&#34;&#34;&#34;
+    if request.method == &#39;POST&#39;:
+        velha = request.form[&#39;old&#39;]
+        nova = request.form[&#39;new&#39;]
+        repet = request.form[&#39;again&#39;]
+
+        p = 1
+        msg = &#39;&#39;
+        if nova != repet:
+            msg = &#39;As novas senhas nao batem&#39;
+            p = 3
+        elif getInfo(auth.username()) != hashlib.md5(velha.encode()).hexdigest():
+            msg = &#39;A senha antiga nao confere&#39;
+            p = 3
+        else:
+            setInfo(hashlib.md5(nova.encode()).hexdigest(), auth.username())
+            msg = &#39;Senha alterada com sucesso&#39;
+            p = 3
+    else:
+        msg = &#39;&#39;
+        p = 3
+
+    return render_template(&#39;index.html&#39;, username=auth.username(), challenges=getQuizes(auth.username()), p=p, msg=msg)
+
+
+@app.route(&#39;/logout&#39;)
+def logout():
+    &#34;&#34;&#34;logout endpoint&#34;&#34;&#34;
+    return render_template(&#39;index.html&#39;,p=2, msg=&#34;Logout com sucesso&#34;), 401
+
+@auth.get_password
+def get_password(username):
+    &#34;&#34;&#34;get user password&#34;&#34;&#34;
+    print(getInfo(username))
+    return getInfo(username)
+
+@auth.hash_password
+def hash_pw(password):
+    &#34;&#34;&#34;hash ouser password&#34;&#34;&#34;
+    return hashlib.md5(password.encode()).hexdigest()
+
+if __name__ == &#39;__main__&#39;:
+    app.run(debug=True, host= &#39;0.0.0.0&#39;, port=8080)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="src.softdes.change"><code class="name flex">
+<span>def <span class="ident">change</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>change password</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.route(&#39;/pass&#39;, methods=[&#39;GET&#39;, &#39;POST&#39;])
+@auth.login_required
+def change():
+    &#34;&#34;&#34;change password&#34;&#34;&#34;
+    if request.method == &#39;POST&#39;:
+        velha = request.form[&#39;old&#39;]
+        nova = request.form[&#39;new&#39;]
+        repet = request.form[&#39;again&#39;]
+
+        p = 1
+        msg = &#39;&#39;
+        if nova != repet:
+            msg = &#39;As novas senhas nao batem&#39;
+            p = 3
+        elif getInfo(auth.username()) != hashlib.md5(velha.encode()).hexdigest():
+            msg = &#39;A senha antiga nao confere&#39;
+            p = 3
+        else:
+            setInfo(hashlib.md5(nova.encode()).hexdigest(), auth.username())
+            msg = &#39;Senha alterada com sucesso&#39;
+            p = 3
+    else:
+        msg = &#39;&#39;
+        p = 3
+
+    return render_template(&#39;index.html&#39;, username=auth.username(), challenges=getQuizes(auth.username()), p=p, msg=msg)</code></pre>
+</details>
+</dd>
+<dt id="src.softdes.converteData"><code class="name flex">
+<span>def <span class="ident">converteData</span></span>(<span>orig)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>format data</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def converteData(orig):
+    &#34;&#34;&#34; format data&#34;&#34;&#34;
+    return orig[8:10]+&#39;/&#39;+orig[5:7]+&#39;/&#39;+orig[0:4]+&#39; &#39;+orig[11:13]+&#39;:&#39;+orig[14:16]+&#39;:&#39;+orig[17:]</code></pre>
+</details>
+</dd>
+<dt id="src.softdes.getInfo"><code class="name flex">
+<span>def <span class="ident">getInfo</span></span>(<span>user)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>get all info from user</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getInfo(user):
+    &#34;&#34;&#34;get all info from user&#34;&#34;&#34;
+    conn = sqlite3.connect(DBNAME)
+    cursor = conn.cursor()
+    cursor.execute(&#34;SELECT pass, type from USER where user = &#39;{0}&#39;&#34;.format(user))
+    print(&#34;SELECT pass, type from USER where user = &#39;{0}&#39;&#34;.format(user))
+    info = [reg[0] for reg in cursor.fetchall()]
+    conn.close()
+    if len(info) == 0:
+        return None
+    else:
+        return info[0]</code></pre>
+</details>
+</dd>
+<dt id="src.softdes.getQuiz"><code class="name flex">
+<span>def <span class="ident">getQuiz</span></span>(<span>id, user)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>get a quiz</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getQuiz(id, user):
+    &#34;&#34;&#34;get a quiz&#34;&#34;&#34;
+    conn = sqlite3.connect(DBNAME)
+    cursor = conn.cursor()
+    if user == &#39;admin&#39; or user == &#39;fabioja&#39; or user == &#39;online&#39;:
+        cursor.execute(&#34;SELECT id, release, expire, problem, tests, results, diagnosis, numb from QUIZ where id = {0}&#34;.format(id))
+    else:
+        cursor.execute(&#34;SELECT id, release, expire, problem, tests, results, diagnosis, numb from QUIZ where id = {0} and release &lt; &#39;{1}&#39;&#34;.format(id, datetime.now().strftime(&#34;%Y-%m-%d %H:%M:%S&#34;)))
+    info = [reg for reg in cursor.fetchall()]
+    conn.close()
+    return info</code></pre>
+</details>
+</dd>
+<dt id="src.softdes.getQuizes"><code class="name flex">
+<span>def <span class="ident">getQuizes</span></span>(<span>user)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>get all quizes from sql</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getQuizes(user):
+    &#34;&#34;&#34;get all quizes from sql&#34;&#34;&#34;
+    conn = sqlite3.connect(DBNAME)
+    cursor = conn.cursor()
+    if user == &#39;admin&#39; or user == &#39;fabioja&#39; or user == &#39;online&#39;:
+        cursor.execute(&#34;SELECT id, numb from QUIZ&#34;.format(datetime.now().strftime(&#34;%Y-%m-%d %H:%M:%S&#34;)))
+    else:
+        cursor.execute(&#34;SELECT id, numb from QUIZ where release &lt; &#39;{0}&#39;&#34;.format(datetime.now().strftime(&#34;%Y-%m-%d %H:%M:%S&#34;)))
+    info = [reg for reg in cursor.fetchall()]
+    conn.close()
+    return info</code></pre>
+</details>
+</dd>
+<dt id="src.softdes.getUserQuiz"><code class="name flex">
+<span>def <span class="ident">getUserQuiz</span></span>(<span>userid, quizid)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>get all user quizes</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getUserQuiz(userid, quizid):
+    &#34;&#34;&#34;get all user quizes&#34;&#34;&#34;
+    conn = sqlite3.connect(DBNAME)
+    cursor = conn.cursor()
+    cursor.execute(&#34;SELECT sent,answer,result from USERQUIZ where userid = &#39;{0}&#39; and quizid = {1} order by sent desc&#34;.format(userid, quizid))
+    info = [reg for reg in cursor.fetchall()]
+    conn.close()
+    return info</code></pre>
+</details>
+</dd>
+<dt id="src.softdes.get_password"><code class="name flex">
+<span>def <span class="ident">get_password</span></span>(<span>username)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>get user password</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@auth.get_password
+def get_password(username):
+    &#34;&#34;&#34;get user password&#34;&#34;&#34;
+    print(getInfo(username))
+    return getInfo(username)</code></pre>
+</details>
+</dd>
+<dt id="src.softdes.hash_pw"><code class="name flex">
+<span>def <span class="ident">hash_pw</span></span>(<span>password)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>hash ouser password</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@auth.hash_password
+def hash_pw(password):
+    &#34;&#34;&#34;hash ouser password&#34;&#34;&#34;
+    return hashlib.md5(password.encode()).hexdigest()</code></pre>
+</details>
+</dd>
+<dt id="src.softdes.lambda_handler"><code class="name flex">
+<span>def <span class="ident">lambda_handler</span></span>(<span>event, context)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>function to test the submition of a student</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def lambda_handler(event, context):
+    &#34;&#34;&#34; function to test the submition of a student&#34;&#34;&#34;
+    try:
+        import json 
+        import numbers
+        
+        def not_equals(first, second):
+            if isinstance(first, numbers.Number) and isinstance(second, numbers.Number):
+                return abs(first - second) &gt; 1e-3
+            return first != second
+        
+        # TODO implement
+        ndes = int(event[&#39;ndes&#39;])
+        code = event[&#39;code&#39;]
+        args = event[&#39;args&#39;]
+        resp = event[&#39;resp&#39;]
+        diag = event[&#39;diag&#39;] 
+        exec(code, locals())
+        
+        
+        test = []
+        for index, arg in enumerate(args):
+            if not &#39;desafio{0}&#39;.format(ndes) in locals():
+                return &#34;Nome da função inválido. Usar &#39;def desafio{0}(...)&#39;&#34;.format(ndes)
+            
+            if not_equals(eval(&#39;desafio{0}(*arg)&#39;.format(ndes)), resp[index]):
+                test.append(diag[index])
+
+        return &#34; &#34;.join(test)
+    except:
+        return &#34;Função inválida.&#34;</code></pre>
+</details>
+</dd>
+<dt id="src.softdes.logout"><code class="name flex">
+<span>def <span class="ident">logout</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>logout endpoint</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.route(&#39;/logout&#39;)
+def logout():
+    &#34;&#34;&#34;logout endpoint&#34;&#34;&#34;
+    return render_template(&#39;index.html&#39;,p=2, msg=&#34;Logout com sucesso&#34;), 401</code></pre>
+</details>
+</dd>
+<dt id="src.softdes.main"><code class="name flex">
+<span>def <span class="ident">main</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>main flask function</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@app.route(&#39;/&#39;, methods=[&#39;GET&#39;, &#39;POST&#39;])
+@auth.login_required
+def main():
+    &#34;&#34;&#34;main flask function&#34;&#34;&#34;
+    msg = &#39;&#39;
+    p = 1
+    challenges=getQuizes(auth.username())
+    sent = datetime.now().strftime(&#34;%Y-%m-%d %H:%M:%S&#34;)
+
+    if request.method == &#39;POST&#39; and &#39;ID&#39; in request.args:
+        id = request.args.get(&#39;ID&#39;)
+        quiz = getQuiz(id, auth.username())
+        if len(quiz) == 0:
+            msg = &#34;Boa tentativa, mas não vai dar certo!&#34;
+            p = 2
+            return render_template(&#39;index.html&#39;, username=auth.username(), challenges=challenges, p=p, msg=msg)
+
+        
+        quiz = quiz[0]
+        if sent &gt; quiz[2]:
+            msg = &#34;Sorry... Prazo expirado!&#34;
+        
+        f = request.files[&#39;code&#39;]
+        filename = &#39;./upload/{0}-{1}.py&#39;.format(auth.username(), sent)
+        f.save(filename)
+        with open(filename,&#39;r&#39;) as fp:
+            answer = fp.read()
+        
+        #lamb = boto3.client(&#39;lambda&#39;)
+        args = {&#34;ndes&#34;: id, &#34;code&#34;: answer, &#34;args&#34;: eval(quiz[4]), &#34;resp&#34;: eval(quiz[5]), &#34;diag&#34;: eval(quiz[6]) }
+
+        #response = lamb.invoke(FunctionName=&#34;Teste&#34;, InvocationType=&#39;RequestResponse&#39;, Payload=json.dumps(args))
+        #feedback = response[&#39;Payload&#39;].read()
+        #feedback = json.loads(feedback).replace(&#39;&#34;&#39;,&#39;&#39;)
+        feedback = lambda_handler(args,&#39;&#39;)
+
+
+        result = &#39;Erro&#39;
+        if len(feedback) == 0:
+            feedback = &#39;Sem erros.&#39;
+            result = &#39;OK!&#39;
+
+        setUserQuiz(auth.username(), id, sent, feedback, result)
+
+
+    if request.method == &#39;GET&#39;:
+        if &#39;ID&#39; in request.args:
+            id = request.args.get(&#39;ID&#39;)
+        else:
+            id = 1
+
+    if len(challenges) == 0:
+        msg = &#34;Ainda não há desafios! Volte mais tarde.&#34;
+        p = 2
+        return render_template(&#39;index.html&#39;, username=auth.username(), challenges=challenges, p=p, msg=msg)
+    else:
+        quiz = getQuiz(id, auth.username())
+
+        if len(quiz) == 0:
+            msg = &#34;Oops... Desafio invalido!&#34;
+            p = 2
+            return render_template(&#39;index.html&#39;, username=auth.username(), challenges=challenges, p=p, msg=msg)
+
+        answers = getUserQuiz(auth.username(), id)
+    
+    return render_template(&#39;index.html&#39;, username=auth.username(), challenges=challenges, quiz=quiz[0], e=(sent &gt; quiz[0][2]), answers=answers, p=p, msg=msg, expi = converteData(quiz[0][2]))</code></pre>
+</details>
+</dd>
+<dt id="src.softdes.setInfo"><code class="name flex">
+<span>def <span class="ident">setInfo</span></span>(<span>pwd, user)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>set user info</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def setInfo(pwd, user):
+    &#34;&#34;&#34;set user info&#34;&#34;&#34;
+    conn = sqlite3.connect(DBNAME)
+    cursor = conn.cursor()
+    cursor.execute(&#34;UPDATE USER set pass = ? where user = ?&#34;,(pwd, user))
+    conn.commit()
+    conn.close()</code></pre>
+</details>
+</dd>
+<dt id="src.softdes.setUserQuiz"><code class="name flex">
+<span>def <span class="ident">setUserQuiz</span></span>(<span>userid, quizid, sent, answer, result)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>submmit a new user quiz</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def setUserQuiz(userid, quizid, sent, answer, result):
+    &#34;&#34;&#34;submmit a new user quiz&#34;&#34;&#34;
+    conn = sqlite3.connect(DBNAME)
+    cursor = conn.cursor()
+    #print(&#34;insert into USERQUIZ(userid,quizid,sent,answer,result) values (&#39;{0}&#39;,{1},&#39;{2}&#39;,&#39;{3}&#39;,&#39;{4}&#39;);&#34;.format(userid, quizid, sent, answer, result))
+    #cursor.execute(&#34;insert into USERQUIZ(userid,quizid,sent,answer,result) values (&#39;{0}&#39;,{1},&#39;{2}&#39;,&#39;{3}&#39;,&#39;{4}&#39;);&#34;.format(userid, quizid, sent, answer, result))
+    cursor.execute(&#34;insert into USERQUIZ(userid,quizid,sent,answer,result) values (?,?,?,?,?);&#34;, (userid, quizid, sent, answer, result))
+    #
+    conn.commit()
+    conn.close()</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="src" href="index.html">src</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="two-column">
+<li><code><a title="src.softdes.change" href="#src.softdes.change">change</a></code></li>
+<li><code><a title="src.softdes.converteData" href="#src.softdes.converteData">converteData</a></code></li>
+<li><code><a title="src.softdes.getInfo" href="#src.softdes.getInfo">getInfo</a></code></li>
+<li><code><a title="src.softdes.getQuiz" href="#src.softdes.getQuiz">getQuiz</a></code></li>
+<li><code><a title="src.softdes.getQuizes" href="#src.softdes.getQuizes">getQuizes</a></code></li>
+<li><code><a title="src.softdes.getUserQuiz" href="#src.softdes.getUserQuiz">getUserQuiz</a></code></li>
+<li><code><a title="src.softdes.get_password" href="#src.softdes.get_password">get_password</a></code></li>
+<li><code><a title="src.softdes.hash_pw" href="#src.softdes.hash_pw">hash_pw</a></code></li>
+<li><code><a title="src.softdes.lambda_handler" href="#src.softdes.lambda_handler">lambda_handler</a></code></li>
+<li><code><a title="src.softdes.logout" href="#src.softdes.logout">logout</a></code></li>
+<li><code><a title="src.softdes.main" href="#src.softdes.main">main</a></code></li>
+<li><code><a title="src.softdes.setInfo" href="#src.softdes.setInfo">setInfo</a></code></li>
+<li><code><a title="src.softdes.setUserQuiz" href="#src.softdes.setUserQuiz">setUserQuiz</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.7.5</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

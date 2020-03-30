@@ -1,0 +1,13 @@
+site_name: Servidor de Desafios
+
+nav: 
+  - Home: index.md
+  - Students: students.md
+  - Professor: professor.md
+  - Guia de Desenvolvimento: dev.md
+  - API: api.md
+
+theme: readthedocs
+
+extra_css:
+  - custom.css
